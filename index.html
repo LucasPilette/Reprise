@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reprise code</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+        <body>
+            <form action="" name="myForm" onsubmit="return validateForm()">
+                <div class="formDiv">
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" name="firstName" onkeyup="validateName()">
+                </div>
+                <span id="nameError" class="error"></span>
+                <div class="formDiv">
+                    <label for="birthDate">Date de naissance :</label>
+                    <input type="date" name="birthDate" onchange="validateBirthDate()">
+                </div>
+                <span id="birthDateError" class="error"></span>
+                <div class="formDiv">
+                    <label for="zipCode">Code postal :</label>
+                    <input type="number" name="zipCode" onkeyup="validateZipCode()"> 
+                </div>
+                <span id="zipCodeError" class="error"></span>
+                <div class="formDiv">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" onkeyup="validateEmail()">
+                </div>
+                <span id="emailError" class="error"></span>
+                <div class="formDiv">
+                    <input type="submit">
+                </div>
+            </form>
+
+            <script src="script.js"></script>
+        </body>
+</html>
